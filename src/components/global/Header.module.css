@@ -1,0 +1,106 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: #fff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.logoLink {
+  flex-shrink: 0;
+}
+
+.logo {
+  height: 3.5rem; /* 56px */
+  width: 3.5rem;
+}
+
+.desktopNav {
+  display: none; /* Mobile-first: Hide desktop nav */
+}
+
+.mobileToggle {
+  display: block; /* Mobile-first: Show mobile toggle */
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+  .desktopNav {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .mobileToggle {
+    display: none; /* Hide mobile toggle on desktop */
+  }
+  .headerCta {
+    margin-left: 1rem;
+  }
+  
+  /* ------------------- DESKTOP DROPDOWN STYLES ------------------- */
+  
+  /* This wrapper holds the top link and the submenu */
+  .navItem {
+    position: relative; 
+    height: 100%; 
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style for the chevron icon next to the parent link */
+  .desktopChevron {
+    margin-left: 0.35rem;
+    margin-top: 0.1rem;
+    transition: transform 0.2s ease;
+  }
+
+  /* Rotate chevron on hover */
+  .navItem:hover .desktopChevron {
+    transform: rotate(180deg);
+  }
+
+  /* The container for the sub-links (initially hidden) */
+  .dropdownContent {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 50%;
+    transform: translateX(-50%); 
+    min-width: 250px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 4px 4px;
+    overflow: hidden;
+    padding: 0.5rem 0;
+    z-index: 60; 
+    border-top: 2px solid var(--accent-warm);
+  }
+
+  /* Show the dropdown when the wrapper is hovered */
+  .navItem:hover .dropdownContent {
+    display: block;
+  }
+  
+  /* Style sub-links (AppNavLinks) inside the dropdown */
+  .dropdownContent a {
+    /* Overrides the 'desktopLink' properties for sub-items */
+    display: block;
+    padding: 0.5rem 1rem;
+    font-weight: 400; 
+    text-transform: none; /* Crucial: ensures sub-links are not uppercase */
+    color: var(--text-dark);
+  }
+  
+  .dropdownContent a:hover {
+    background-color: var(--bg-light);
+    color: var(--primary-dark);
+  }
+}

@@ -1,0 +1,361 @@
+.hero {
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-light);
+}
+.heroImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background-color: var(--primary-dark);
+  opacity: 0.6;
+}
+.hero h1 {
+  position: relative;
+  z-index: 2;
+  color: var(--text-light);
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+.heroSubtitle {
+    position: relative;
+    z-index: 2;
+    color: var(--text-light);
+    text-align: center;
+    max-width: 900px;
+    margin: 1rem auto 0;
+    font-size: 1.1rem;
+}
+
+/* Mission & Vision Block */
+.missionVisionBlock {
+    display: grid;
+    gap: 3rem;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.missionVisionBlock h2 {
+  color: var(--primary-dark);
+  border-bottom: 2px solid var(--accent-warm);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+.missionVisionBlock p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-dark-secondary);
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--primary-dark);
+}
+.approachIntro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+    font-size: 1.1rem;
+    color: var(--text-dark-secondary);
+}
+
+/* Guiding Principles */
+.principlesGrid {
+  display: grid;
+  gap: 1.5rem;
+}
+.principleCard {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+  height: 100%;
+}
+.principleIcon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: var(--primary);
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+.principleCard h3 {
+  font-size: 1.25rem;
+  color: var(--primary-dark);
+}
+.principleCard p {
+    color: var(--text-dark-secondary);
+    font-size: 0.95rem;
+}
+
+/* Our Story */
+.storyGrid {
+  display: grid;
+  gap: 3rem;
+  align-items: center;
+}
+.storyImage {
+  width: 100%;
+  height: 400px; /* Define height for better visual */
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+.storyText p {
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    color: var(--text-dark-secondary);
+}
+
+/* Our Approach */
+.approachGrid {
+  display: grid;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.approachStep {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1rem;
+  background-color: var(--bg-light);
+  border-radius: 8px;
+}
+.approachNumber {
+  flex-shrink: 0;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: var(--accent-warm);
+  color: var(--text-light);
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.approachStep h3 {
+    margin-top: 0;
+    color: var(--primary-dark);
+}
+.approachStep p {
+    font-size: 0.95rem;
+    color: var(--text-dark-secondary);
+}
+
+
+/* Team & Endorsements Containers */
+.twoColumnGrid {
+    display: grid;
+    gap: 3rem;
+}
+.teamCtaBlock {
+    text-align: center;
+    border: 1px dashed var(--border-color);
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: var(--bg-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.teamCtaBlock h2, .endorsementTitle {
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
+}
+/* .endorsementsBlock {
+    Styling for endorsenment block goes here
+} */
+.endorsementCard {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 1.5rem;
+    border-left: 4px solid var(--accent-warm);
+}
+.quoteText {
+    font-style: italic;
+    margin-bottom: 0.75rem;
+    font-size: 1.05rem;
+}
+.authorName {
+    font-weight: 700;
+    color: var(--primary-dark);
+    margin: 0;
+}
+.authorTitle {
+    font-size: 0.9rem;
+    color: var(--accent-warm);
+    margin: 0;
+}
+
+/* ➡️ MERGED: Leadership Team Styles */
+.teamGrid {
+    display: grid;
+    gap: 2rem;
+}
+.teamCard {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    padding: 2rem;
+    text-align: center;
+}
+.teamHeadshot {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1.5rem;
+}
+.teamCard h3 {
+    color: var(--primary-dark);
+}
+.teamTitle {
+    font-family: var(--font-display);
+    color: var(--accent-warm);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.teamBio {
+    font-size: 0.9rem;
+}
+.linkedinIcon {
+    margin-top: 1rem;
+    display: inline-block;
+    color: var(--primary-dark);
+}
+  
+/* ➡️ MERGED: Advisory Council Styles */
+.advisoryCouncil {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.advisoryCouncil ul {
+    list-style: none;
+    padding-left: 0;
+}
+.advisoryCouncil li {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 1.1rem;
+}
+.advisoryCouncil li span:first-child {
+    font-weight: 700;
+}
+.advisoryCouncil li span:last-child {
+    color: #555;
+}
+  
+/* ➡️ MERGED: Employment CTA Styles */
+.employmentCta {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.employmentCta p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Transparency */
+.transparencyBlock {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.transparencyBlock h2 {
+    color: var(--primary-dark);
+    margin-bottom: 2rem;
+}
+.financialInfoGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+.financialInfoGrid h4 {
+    color: var(--accent-warm);
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+.financialInfoGrid p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-dark);
+}
+.transparencyStatement {
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+    color: var(--text-dark-secondary);
+}
+.annualReportLink {
+  font-weight: 700;
+  color: var(--accent-warm);
+  font-family: var(--font-display);
+}
+
+/* Desktop adaptations */
+@media (min-width: 768px) {
+  .principlesGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .storyGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .storyText {
+    order: 0; 
+  }
+  .approachGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .twoColumnGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .missionVisionBlock {
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 2rem;
+  }
+  
+  /* Team Grid Desktop */
+  .teamGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .principlesGrid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  /* Team Grid Large Desktop */
+  .teamGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,114 @@
+/* --- Core Menu Container --- */
+.mobileMenu {
+  position: fixed; 
+  top: 4.5rem; /* Aligns below the header */
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 4.5rem); 
+  background-color: var(--bg-light); /* Use site light background for clean look */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Stronger, modern shadow */
+  display: block;
+  z-index: 40;
+  overflow-y: auto; 
+  /* Add smooth entry/exit transition if implemented via state/props */
+  transition: transform 0.3s ease-out;
+}
+
+@media (min-width: 768px) {
+  .mobileMenu {
+    display: none;
+  }
+}
+
+/* Wrapper for individual menu items (top-level and children) */
+.menuItem {
+  /* Use a subtle, themed divider */
+  border-bottom: 1px solid var(--border-color); 
+}
+
+/* --- Menu Links (AppNavLink styles) --- */
+/* Target the AppNavLink component which styles the actual links */
+.menuItem > a, /* for simple links */
+.parentLink > a { /* for parent links */
+  display: block;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-dark);
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+}
+
+.menuItem > a:hover,
+.parentLink > a:hover {
+  background-color: var(--bg-medium); /* Subtle hover */
+}
+
+/* Parent link container (for items with children) */
+.parentLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-right is now unnecessary as the chevron has its own padding */
+}
+
+/* Ensure the AppNavLink inside .parentLink takes up available space */
+.parentLink a {
+  flex-grow: 1;
+  /* AppNavLink styles typically handle this, ensure no conflicting border */
+  border-bottom: none; 
+}
+
+/* Chevron icon button */
+.chevron {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 1rem 1.5rem; /* Increase padding for easy tap target */
+  color: var(--accent-warm); /* Use a warm accent color */
+  transition: transform 0.2s ease, background-color 0.15s ease;
+  flex-shrink: 0;
+}
+
+.chevron:hover {
+  background-color: var(--bg-medium);
+}
+
+/* --- Submenu (Accordion) Styles --- */
+/* Style for the wrapper around sub-links (the submenu content) */
+.subItems {
+  margin: 0; 
+  /* Visual cue that it's a submenu */
+  border-left: 3px solid var(--accent-warm); 
+  padding: 0.5rem 0;
+  background-color: var(--bg-medium); /* Slightly darker background for hierarchy */
+}
+
+/* Ensure the sub-link AppNavLink (mobileLink) is correctly padded */
+.subItems a {
+  padding: 0.75rem 1.5rem 0.75rem 2.5rem; /* Increased left padding to show hierarchy */
+  border-bottom: none; 
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--text-dark-secondary);
+}
+
+.subItems a:hover {
+    background-color: var(--primary-light); /* Theme background on hover */
+    color: var(--primary-dark);
+}
+
+/* --- CTA Container --- */
+.ctaContainer {
+  padding: 1rem 1.5rem;
+  position: sticky; 
+  bottom: 0;
+  background-color: var(--bg-light); /* Match menu background */
+  border-top: 1px solid var(--border-color);
+  margin-top: 1rem;
+}
+
+.ctaButton {
+  width: 100%;
+  text-align: center;
+}

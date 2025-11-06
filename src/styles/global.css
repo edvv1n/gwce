@@ -1,0 +1,95 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700&display=swap');
+
+/* CSS Variables for Color Palette & Fonts */
+:root {
+  /* Colors from Logo */
+  --primary-dark: #3A2D7D;
+  --primary: #5F4B8B;
+  --accent-warm: #D94B8B;
+  --accent-bright: #F28C38;
+  --text-light: #FFFFFF;
+  --text-dark: #1a1a1a;
+  --bg-light: #f8f9fa; /* Light grey for sections */
+  --border-color: #ddd;
+
+  /* Fonts */
+  --font-body: 'Lato', sans-serif;
+  --font-display: 'Montserrat', sans-serif;
+}
+
+/* Global Resets & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-body);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+body {
+  background-color: #fff;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+
+/* Responsive headings */
+@media (min-width: 768px) {
+  h1 { font-size: 3rem; }
+}
+
+a {
+  color: var(--primary-dark);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: var(--accent-warm);
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Global Container Class */
+.container {
+  width: 90%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Base section padding */
+.section-padding {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.section-padding-light {
+  background-color: var(--bg-light);
+}
+
+/* Lazy Load Image CSS */
+.lazy-load-image-background.blur {
+  filter: blur(15px);
+}
+.lazy-load-image-background.blur.lazy-load-image-loaded {
+  filter: blur(0);
+  transition: filter 0.3s;
+}
+

@@ -1,0 +1,91 @@
+.hero {
+  background-color: var(--primary);
+  color: var(--text-light);
+  padding: 4rem 1rem;
+  text-align: center;
+}
+.hero h1 {
+  color: var(--text-light);
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.teamGrid {
+  display: grid;
+  gap: 2rem;
+}
+
+.teamCard {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  padding: 2rem;
+  text-align: center;
+}
+.teamHeadshot {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1.5rem;
+}
+.teamCard h3 {
+  color: var(--primary-dark);
+}
+.teamTitle {
+  font-family: var(--font-display);
+  color: var(--accent-warm);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.teamBio {
+  font-size: 0.9rem;
+}
+.linkedinIcon {
+  margin-top: 1rem;
+  display: inline-block;
+  color: var(--primary-dark);
+}
+
+.advisoryCouncil {
+  max-width: 800px;
+}
+.advisoryCouncil ul {
+  list-style: none;
+}
+.advisoryCouncil li {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 1.1rem;
+}
+.advisoryCouncil li span:first-child {
+  font-weight: 700;
+}
+.advisoryCouncil li span:last-child {
+  color: #555;
+}
+
+.employmentCta {
+  text-align: center;
+}
+.employmentCta p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Desktop 3-column grid */
+@media (min-width: 768px) {
+  .teamGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .teamGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
