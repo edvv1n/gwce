@@ -68,7 +68,11 @@ export default function MobileMenu({ navItems, isOpen, onClose }: MobileMenuProp
             {/* Conditional rendering based on state */}
             {hasChildren && isSubmenuOpen && (
               <div className={styles.subItems} onClick={(e) => e.stopPropagation()}>
-                {item.children.map((child) => (
+                {/* ✅ FIX: Use optional chaining (?.), which is the most concise way to resolve 
+                  the 'possibly undefined' error when mapping over an optional array.
+                  Alternatively, use the non-null assertion operator: item.children!.map
+                */}
+                {item.children?.map((child) => ( 
                   <AppNavLink 
                     key={child.path} 
                     to={child.path}

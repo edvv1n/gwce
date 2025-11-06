@@ -1,6 +1,3 @@
-// src/components/shared/ImpactChart.tsx
-
-import React from 'react';
 import { Pie } from 'react-chartjs-2';
 // Import the necessary runtime components
 import { 
