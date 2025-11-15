@@ -113,7 +113,7 @@ export default function News() {
               <PostCard 
                 title="Cultural Exchange Recap" 
                 snippet="[Snippet...]" 
-                imgSrc={IMAGES.PROGRAMS.RESEARCH} 
+                imgSrc={IMAGES.PROGRAMS.CULTURE} 
               />
             </div>
           </section>

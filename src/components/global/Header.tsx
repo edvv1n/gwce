@@ -41,7 +41,11 @@ export default function Header() {
     <header className={styles.header}> 
       <nav className={`${styles.nav} container`}>
         <Link to="/" title="GWCE Home" className={styles.logoLink}>
-          <img src="/logo.png" alt="GWCE Logo" className={styles.logo} /> 
+          {/* Wrapper for the logo and the organization name */}
+          <div className={styles.logoContent}>
+            <img src="/logo.png" alt="GWCE Logo" className={styles.logo} /> 
+            <span className={styles.organizationName}>Global Women Cultural Exchange</span>
+          </div>
         </Link>
 
         {/* --- Desktop Navigation --- */}

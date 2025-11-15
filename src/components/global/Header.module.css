@@ -18,9 +18,26 @@
   flex-shrink: 0;
 }
 
+/* New: Container to align logo image and text side-by-side */
+.logoContent {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Space between logo and text */
+}
+
 .logo {
   height: 3.5rem; /* 56px */
   width: 3.5rem;
+}
+
+/* New: Style for the organization name */
+.organizationName {
+  /* Reduced from 0.9rem to 0.8rem for mobile */
+  font-size: 0.8rem; 
+  font-weight: 700;
+  color: var(--primary-dark); /* Using a variable from the theme */
+  white-space: nowrap; /* Prevents wrapping */
+  line-height: 1.2;
 }
 
 .desktopNav {
@@ -33,10 +50,16 @@
 
 /* Desktop styles */
 @media (min-width: 768px) {
+  /* Reduced from 1.1rem to 1.0rem for desktop */
+  .organizationName {
+    font-size: 1.0rem; 
+  }
+
   .desktopNav {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    /* Reduced gap to save space */
+    gap: 0.3rem; 
   }
   .mobileToggle {
     display: none; /* Hide mobile toggle on desktop */

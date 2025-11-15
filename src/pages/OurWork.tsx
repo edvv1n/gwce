@@ -1,6 +1,6 @@
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import { FaUsers, FaHandHoldingHeart, FaGlobeAmericas } from 'react-icons/fa';
+// import { FaUsers, FaHandHoldingHeart, FaGlobeAmericas } from 'react-icons/fa';
 import Button from '../components/shared/Button';
 import styles from './OurWork.module.css';
 import { IMAGES } from '../constants/images';
@@ -69,7 +69,7 @@ export default function Programs() {
             desc="Our annual summit is the cornerstone of our mission, creating a dynamic gathering where dialogue becomes tangible action and cross-cultural collaboration."
             ctaText="Explore Summit"
             ctaLink="/programs/summit"
-            imgSrc={IMAGES.PROGRAMS.EDUCATION}
+            imgSrc={IMAGES.PROGRAMS.SUMMIT}
           />
           
           {/* 2. Youth Global Leadership Program */}
@@ -78,7 +78,7 @@ export default function Programs() {
             desc="A 12-month mentorship program cultivating the next generation of female leaders with cultural intelligence, confidence, and a robust global network."
             ctaText="Apply Now"
             ctaLink="/programs/mentorship"
-            icon={<FaUsers size={80} />}
+            imgSrc={IMAGES.PROGRAMS.COMMUNITY}
           />
           
           {/* 3. Cultural Immersion Programs */}
@@ -87,7 +87,7 @@ export default function Programs() {
             desc="Moving learning from theory to practice through intimate Fireside Chats, digital exchanges, and travel journeys designed for shared experience and genuine connection."
             ctaText="View Upcoming Events"
             ctaLink="/programs/cultural"
-            icon={<FaGlobeAmericas size={80} />}
+            imgSrc={IMAGES.PROGRAMS.CULTURE}
           />
           
           {/* 4. Action Grants */}
@@ -96,7 +96,7 @@ export default function Programs() {
             desc="Providing seed funding and support to women-led initiatives that address community challenges through a cultural or collaborative lens."
             ctaText="Learn About Eligibility"
             ctaLink="/programs/grants"
-            icon={<FaHandHoldingHeart size={80} />}
+            imgSrc={IMAGES.PROGRAMS.ACTION}
           />
         </div>
       </section>

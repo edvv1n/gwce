@@ -3,12 +3,13 @@ export const IMAGES = {
     HERO: {
       // H1: Building Global Sisterhood, One Connection at a Time
       MAIN: "https://images.unsplash.com/photo-1630068846062-3ffe78aa5049?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170", // Diverse women holding hands/in a circle (Sisterhood/Connection)
-      SECONDARY: "https://images.unsplash.com/photo-1552581234-26160f608093" // Diverse women collaborating in a meeting (Collaboration/Action)
+      SECONDARY: "https://images.unsplash.com/photo-1573497701240-345a300b8d36?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Diverse women collaborating in a meeting (Collaboration/Action)
     },
   
     // About Page Images (Mission, Vision, Story)
     ABOUT: {
       // Hero Image Placeholder - diverse women group
+      HERO_BACKGROUND: "https://images.unsplash.com/photo-1653566031568-71626c8247f5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Diverse women group smiling (Inclusivity)
       MAIN: "https://images.unsplash.com/photo-1556742111-a301076d9d18", // Diverse women group smiling (Inclusivity)
       MISSION: "https://images.unsplash.com/photo-1599587582531-ec787d58a5e3", // Diverse woman with globe/world map (Global Mission/Vision)
       VISION: "https://images.unsplash.com/photo-1534528736952-44e21b0b533d" // Portrait of an elegant, professional woman (Leadership/Professional Aesthetic)
@@ -16,14 +17,16 @@ export const IMAGES = {
   
     // Programs Page Images (Summit, Mentorship, Cultural Exchange, Action Grants)
     PROGRAMS: {
+      SUMMIT: "https://images.unsplash.com/photo-1613186941372-f19da23e373b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       // Global Women's Cultural Summit (Image/Video Placeholder)
       EDUCATION: "https://images.unsplash.com/photo-1657741006812-c659a84be5ed?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170", // Women presenting/speaking at a conference (Summit/Forum)
       // Youth Mentorship Program
       COMMUNITY: "https://images.unsplash.com/photo-1739303987830-ca19742b19bc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170", // Woman mentoring/teaching youth (Mentorship/Education)
       // Cultural Exchange Programs
       RESEARCH: "https://images.unsplash.com/photo-1621451537084-482c73073a0f", // Diverse women sharing/interacting (Cultural Exchange/Community)
+      CULTURE: "https://images.unsplash.com/photo-1737649507334-92c9fa4beb7c?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       // ✅ FIX: Action Grants Image added
-      ACTION: "https://images.unsplash.com/photo-1543269865-cbf427517173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" // Woman working on a project (Action/Implementation)
+      ACTION: "https://images.unsplash.com/photo-1716654718430-c7f54c3125c8?q=80&w=1131&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Woman working on a project (Action/Implementation)
     },
   
     // Team Page Images

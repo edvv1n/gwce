@@ -11,7 +11,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { FaLinkedin } from 'react-icons/fa'; // Keep FaLinkedin for LinkedIn links
 import styles from './About.module.css';
-import { IMAGES } from '../constants/images';
+import { IMAGES } from '../constants/images'; // Assuming this path is correct
 import Button from '../components/shared/Button';
 import { Link } from 'react-router-dom'; // Added Link for team CTA
 
@@ -91,13 +91,8 @@ export default function About() {
   return (
     <div className={styles.aboutPage}>
       {/* 1. Hero Image */}
-      <section className={styles.hero}>
-        <LazyLoadImage
-          src={IMAGES.ABOUT.MAIN}
-          alt="Group of diverse women"
-          effect="blur"
-          className={styles.heroImage}
-        />
+      {/* Changed to a div with background image, referencing a new image constant */}
+      <section className={styles.hero} style={{ backgroundImage: `url(${IMAGES.ABOUT.HERO_BACKGROUND})` }}>
         <div className={styles.heroOverlay} />
         <div className="container">
           <h1>We Believe in a World Connected by Sisterhood.</h1>
