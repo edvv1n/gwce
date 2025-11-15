@@ -80,7 +80,6 @@
   line-height: 1.5;
 }
 
-
 /* --- Sub-page common CSS (ProgramHero) --- */
 .heroBanner {
   position: relative;
@@ -216,6 +215,20 @@
 }
 .fullWidthCta h2 {
     color: var(--text-light);
+}
+
+/* -------------------------------------------------- */
+/* MOBILE FIX: Prevent ProgramCard images covering text */
+/* -------------------------------------------------- */
+@media (max-width: 767px) {
+  .cardImageWrapper {
+    height: auto;
+  }
+  .cardImage {
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
 }
 
 /* Media Queries */
